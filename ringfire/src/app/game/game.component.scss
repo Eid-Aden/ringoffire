@@ -1,0 +1,24 @@
+.game-field {
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("./../../assets/img/bg-card-poker.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > img {
+    width: 130px;
+    height: 180px;
+  }
+}
+
+.card-check {
+  position: relative;
+  img {
+    position: absolute;
+    width: 150px;
+  }
+}

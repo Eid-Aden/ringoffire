@@ -1,0 +1,75 @@
+.start-creen {
+  background-color: #404040;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+/* .start-label {
+  background: #ffc300;
+  padding: 12px;
+  border-radius: 15px;
+
+  color: #000814;
+  width: 100%;
+  max-width: 720px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  > h2 {
+    text-align: center;
+  }
+} */
+.start-label {
+  background: linear-gradient(135deg, #ffc300, #ffdd55); // schöner Farbverlauf
+  padding: 16px 24px; // etwas mehr Luft
+  border-radius: 20px;
+  color: #000814;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+
+  width: 100%;
+  max-width: 720px;
+  position: absolute;
+  bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); // moderner Schatten
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(135deg, #ffb300, #ffcc00);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.5);
+  }
+
+  > h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #003049;
+  }
+}
+
+@media (min-width: 760px) {
+  .start-creen > img {
+    min-height: 100vh;
+  }
+}
