@@ -1,10 +1,27 @@
+  <button (click)="backHome()">back Home</button>
+
+
+
+
+
+
 <div class="game-field">
+
   <div class="card-check">
     <img
-      *ngFor="let c of [0, 1, 2, 3, 4]; let i = index"
-      [ngStyle]="{ 'right.px': i * 5 }"
+      *ngFor="let c of [0, 1, 2, 3, ]; let i = index" [ngStyle]="{ 'right.px': i * 5 }"
       src="assets/img/card_cover.png"
       alt="card"
     />
+    <img (click)="pickCard()"class="top-card"style="right: 25px ;" src="assets/img/card_cover.png"alt="card"/>
+
+
+ <img (click)="pickCard()" *ngIf="pickCardAnimation" class="pick-card " style="right: 25px;" src="assets/img/{{ currentCard }}.png" alt="">
+
+
+
+
+
   </div>
 </div>
+
