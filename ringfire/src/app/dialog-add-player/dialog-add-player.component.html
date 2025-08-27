@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Add Player's Name</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill" style="width: 100%">
+    <mat-label>Player name</mat-label>
+    <input matInput [(ngModel)]="data.name" />
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-flat-button style="background-color: blue; color: white" (click)="onNoClick()">Cancel</button>
+
+  <button mat-raised-button color="primary" [mat-dialog-close]="data.name" cdkFocusInitial>Save</button>
+</mat-dialog-actions>
