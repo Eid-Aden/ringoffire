@@ -10,6 +10,8 @@
   ></app-player>
 </div>
 
+<app-game-card [cardbox]="currentCard" class="card-game"></app-game-card>
+
 <div class="game-field">
   <div class="card-check">
     <!-- Card Stuck -->
@@ -23,8 +25,6 @@
     <img (click)="pickCard()" *ngIf="pickCardAnimation" class="pick-card" style="right: 25px" src="assets/img/{{ currentCard }}.png" alt="" />
   </div>
 </div>
-
-<app-game-card [cardbox]="currentCard" class="card-game"></app-game-card>
 
 <button matFab color="primary" class="btn-add" (click)="openDialog()">
   <mat-icon>add</mat-icon>

@@ -135,8 +135,9 @@ export class GameComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe((names: string) => {
-      console.log("registed by", names);
-      this.game.players.push(names);
+      if (names && names.length > 0) {
+        this.game.players.push(names);
+      }
     });
   }
 }

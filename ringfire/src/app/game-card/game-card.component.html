@@ -1,6 +1,6 @@
 <mat-card appearance="outlined" class="custom-card">
   <mat-card-header>
-    <mat-card-subtitle class="custom-subtitle">{{ title }}</mat-card-subtitle>
+    <mat-card-subtitle class="custom-subtitle">{{ cardbox ? title : "Please pick a card" }}</mat-card-subtitle>
   </mat-card-header>
-  <mat-card-content class="custom-content"> {{ description }} </mat-card-content>
+  <mat-card-content class="custom-content"> {{ cardbox ? description : " Please click on the card stack to select the next card" }} </mat-card-content>
 </mat-card>
