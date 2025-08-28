@@ -60,28 +60,29 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     filter: brightness(1.5);
   }
-
-  > h2 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.4rem;
-    color: #003049;
-  }
-
-  >h3{
-    color: #003049;
-    background-color: #ffdd55;
-    &:hover{
-      background: #404040;
-      padding: 12px;
-    }
-
-
-  }
 }
 
 @media (min-width: 760px) {
   .start-creen > img {
     min-height: 100vh;
+  }
+}
+
+.button-row {
+  background-color: #1469c0;
+  color: white;
+}
+
+.my-btn {
+  background-color: #ff6f00 !important; /* orange Hintergrund */
+  color: white !important; /* Textfarbe */
+  font-size: 18px; /* größere Schrift */
+  padding: 12px 24px; /* mehr Platz */
+  border-radius: 12px; /* abgerundet */
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e65100 !important; /* dunkler beim Hover */
+    transform: scale(1.05); /* leichtes Zoomen */
   }
 }

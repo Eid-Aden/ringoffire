@@ -1,5 +1,3 @@
-<button (click)="backHome()">back Home</button>
-
 <div>
   <app-player
     *ngFor="let player of game.players; let i = index"
@@ -26,6 +24,6 @@
   </div>
 </div>
 
-<button matFab color="primary" class="btn-add" (click)="openDialog()">
+<button mat-fab color="primary" class="btn-add" (click)="openDialog()">
   <mat-icon>add</mat-icon>
 </button>

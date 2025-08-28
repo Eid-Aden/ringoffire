@@ -60,6 +60,8 @@
 button {
   padding: 10px 24px;
   background-color: #8b4513;
+  width: 120px;
+  height: 120px;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -90,4 +92,24 @@ button {
   top: 120px;
   left: 100px;
   right: 100px;
+}
+
+.btn-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+
+  background: lightblue !important;
+  color: white !important;
+
+  mat-icon {
+    font-size: 25px;
+  }
+
+  &:hover {
+    background: deepskyblue !important;
+    transform: scale(1.1);
+  }
 }
